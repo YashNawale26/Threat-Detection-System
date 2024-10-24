@@ -1,0 +1,45 @@
+CSIC     : Web Application Attack Detection (SQL Injection, XSS, etc.)
+NSL_KDD  : IDS, DoS/DDoS, AD
+Phishing : Phishing
+Malware  : Malware
+
+
+Web Application Attack Detection (SQL Injection, XSS, etc.)
+Dataset Link:
+	CSIC 2010 HTTP Dataset
+		https://www.kaggle.com/datasets/ispangler/csic-2010-web-application-attacks
+	
+Intrusion Detection (IDS)
+Dataset Link:
+									
+	CICIDS2017 Dataset
+		https://www.kaggle.com/datasets/hassan06/nslkdd
+	
+# DoS/DDoS Attack Detection
+Dataset Link:
+	CICIDS2017 Dataset
+		https://www.kaggle.com/datasets/hassan06/nslkdd
+									
+Anomaly Detection (Network/Endpoint Anomalies)
+Dataset Link:
+	CICIDS2017 Dataset
+		https://www.kaggle.com/datasets/hassan06/nslkdd
+		
+Phishing Detection
+Dataset Link:
+	Phishing Websites Dataset
+		https://www.kaggle.com/datasets/shashwatwork/web-page-phishing-detection-dataset
+	
+Malware Detection
+Dataset Link:
+	Microsoft Malware Classification Challenge
+		https://www.kaggle.com/c/malware-classification
+	
+	
+	
+IDS: NSL-KDD Dataset :	https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset
+DOS: CAIDA DDoS Attack 2007 Dataset (New request) : https://www.caida.org/catalog/datasets/ddos-20070804_dataset/
+Anomaly Detection (Network/Endpoint Anomalies) 
+	: NSL-KDD Dataset : https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset
+	: UNSW-NB15 Dataset : https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15	
+Phishing Detection : Email Phishing Corpus : https://www.kaggle.com/datasets/rtatman/fraudulent-email-corpus

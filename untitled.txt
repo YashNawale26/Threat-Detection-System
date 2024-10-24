@@ -1,0 +1,57 @@
+Anomaly Detection Model
+Dataset: KDD  - connection-level network data
+
+This is suited for models that are meant to monitor and classify network traffic and detect intrusion patterns in a simplified or isolated environment like firewalls or network devices.
+
+The dataset is labeled as either: normal or attack, so the types of attacks are 
+df['class'].unique()
+array(['normal', 'neptune', 'warezclient', 'ipsweep', 'portsweep',
+       'teardrop', 'nmap', 'satan', 'smurf', 'pod', 'back',
+       'guess_passwd', 'ftp_write', 'multihop', 'rootkit',
+       'buffer_overflow', 'imap', 'warezmaster', 'phf', 'land',
+       'loadmodule', 'spy', 'perl'], dtype=object)
+
+Denial-of-Service (DoS) Attacks:
+    'neptune': A DoS attack that floods the network with SYN requests (TCP connections), exhausting resources.
+    'smurf': A DoS attack where ICMP packets are sent with a spoofed source address, causing a flood of replies to a victim.
+    'teardrop': A DoS attack that involves sending fragmented packets that cannot be reassembled correctly, leading to system crashes.
+    'pod' (Ping of Death): A DoS attack that sends malformed or oversized ping packets, crashing the target system.
+    'back': A DoS attack targeting web servers by sending requests that exploit vulnerabilities to crash or disable the server.
+    'land': A DoS attack where a spoofed packet is sent with the same source and destination IP address and port, causing system crashes.
+
+Probing Attacks:
+    'ipsweep': A probing attack where an attacker scans a network to find which IP addresses are active.
+    'portsweep': A probing attack where the attacker scans for open ports on multiple IP addresses.
+    'nmap': A tool used for probing and scanning networks for active hosts and services.
+    'satan': A probing tool that scans networks for vulnerabilities.
+
+Remote-to-Local (R2L) Attacks:
+    'warezclient': An R2L attack where an unauthorized user attempts to connect and download files from an FTP server.
+    'guess_passwd': A brute-force password-guessing attack where an attacker tries to gain access by repeatedly guessing passwords.
+    'ftp_write': An R2L attack where the attacker exploits vulnerabilities in an FTP server to upload malicious files.
+    'imap': An R2L attack exploiting vulnerabilities in the IMAP protocol (used for email retrieval) to gain unauthorized access.
+    'warezmaster': Similar to 'warezclient', but with the intent to upload illegal content rather than downloading it.
+    'phf': An R2L attack exploiting a vulnerability in the 'phf' script used by web servers to gain unauthorized access.
+
+User-to-Root (U2R) Attacks:
+    'rootkit': A U2R attack where an attacker installs a rootkit to gain root (administrator) access and maintain control over the system.
+    'buffer_overflow': A U2R attack where the attacker exploits buffer overflow vulnerabilities to gain control of a system.
+    'multihop': A U2R attack involving multiple intermediary systems to gain unauthorized access to the target system.
+    'loadmodule': A U2R attack where an attacker loads malicious kernel modules to execute commands with root privileges.
+    'spy': An attack where the attacker gathers information (spies) on users of a system.
+    'perl': A U2R attack where a vulnerability in a Perl script is exploited to gain root access.
+
+Summary:
+'normal': Represents normal, legitimate network traffic.
+The remaining entries represent different types of network attacks categorized into:
+DoS (Denial of Service): Disrupts services by overwhelming resources.
+Probe: Scans to gather information about the network.
+R2L (Remote to Local): Tries to gain unauthorized local access from a remote machine.
+U2R (User to Root): Attempts to gain root privileges after gaining access as a normal user.
+
+
+
+
+
+CICIDS 
+flow-level network traffic
